@@ -1,0 +1,144 @@
+<!DOCTYPE>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<title>Peter Siemens</title>
+	<style>
+		body {
+			padding: 30px 10px;
+			font-family: "Georgia";
+		}
+		div.container {
+			max-width: 550px;
+			margin: 0 auto;
+		}
+
+		h1, h2, h3 {
+			font-family: Helvetica, Arial, sans-serif;
+			font-weight: 500;
+		}
+
+		h1 {
+			text-align: center;
+			font-size: 24px;
+		}
+
+		h2 {
+			font-size: 16px;
+		}
+		div.header {
+			margin-bottom: 30px;
+		}
+		div.header p {
+			font-size: 16px;
+			line-height: 1.5;
+			text-align: center;
+		}
+		div.projects {
+			overflow: auto;
+		}
+		div.project {
+			width: 50%;
+			float: left;
+			margin-bottom: 30px;
+		}
+
+		div.project:nth-child(odd) div.inner {
+			padding-right: 15px;
+		}
+
+		div.project:nth-child(even) div.inner {
+			padding-left: 15px;
+		}
+
+		div.project img {
+			width: 99%;
+			height: auto;
+			border: 1px solid rgb(211,211,211);
+		}
+
+		@media(max-width: 500px){
+			div.project {
+				width: 100%;
+				float: none;
+			}
+			div.project:nth-child(odd) div.inner {
+				padding-right: 0;
+			}
+			div.project:nth-child(even) div.inner {
+				padding-left: 0;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h1>Peter Siemens</h1>
+			<p>Web Developer at <a href="http://ubyssey.ca">The Ubyssey</a> and computer science student at the University of British Columbia. I like to tell stories with code. Avid skier and aspiring data journalist.<p>
+			<a href="mailto:peterjsiemens@gmail.com">peterjsiemens@gmail.com</a> &middot; <a href="https://twitter.com/petersiemens">words</a> &middot; <a href="http://instagram.com/psiemens">photos</a>
+		</div>
+		<div class="projects">
+			<div class="project">
+				<div class="inner">
+					<h2>Male/female income disparity</h2>
+					<a href="http://ubyssey.ca/data/salary-list-gender-income-disparity-145/">
+						<img src="projects/income-disparity.png" />
+					</a>
+				</div>
+			</div>
+			<div class="project">
+				<div class="inner">
+					<h2>UBC salary database</h2>
+					<a href="http://ubyssey.ca/salaries">
+						<img src="projects/salary-list.png" />
+					</a>
+				</div>
+			</div>
+			<div class="project">
+				<div class="inner">
+					<h2>UBC housing costs survey</h2>
+					<a href="http://ubyssey.ca/features/ubc-housing-numbers-573/">
+						<img src="projects/housing.png" />
+					</a>
+				</div>
+			</div>
+			<div class="project">
+				<div class="inner">
+					<h2>Hiking the Tolkien range</h2>
+					<a href="http://ubyssey.ca/sports/mt-gandalf-and-mt-aragorn-in-bcs-tolkien-range-893/">
+						<img src="projects/tolkien.png" />
+					</a>
+				</div>
+			</div>
+			<div class="project">
+				<div class="inner">
+					<h2>Do preseason rankings matter?</h2>
+					<a href="http://ubyssey.ca/sports/do-preseason-rankings-matter-a-look-at-the-cis-stats-325/">
+						<img src="projects/sports-stats.png" />
+					</a>
+				</div>
+			</div>
+			<div class="project">
+				<div class="inner">
+					<h2>National University Wire</h2>
+					<a href="http://nuwire.ca/">
+						<img src="projects/nuw.png" />
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-11652263-8', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+</body>
+</html>
