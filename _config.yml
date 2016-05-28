@@ -1,0 +1,10 @@
+# Site settings
+title: Peter Siemens
+email: peterjsiemens@gmail.com
+description: Software engineer, computer science student, mediocre skier and dabbling data journalist.
+baseurl: ""
+url: "http://petersiemens.com"
+github_username: psiemens
+
+# Build settings
+markdown: kramdown

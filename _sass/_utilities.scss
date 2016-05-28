@@ -1,0 +1,26 @@
+.text-center {
+  text-align: center;
+}
+
+.text-muted {
+  color: $color-text-light;
+}
+
+@each $name, $underline-color in $underline-colors {
+  .underline-#{$name} {
+    display: inline-block;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      display: block;
+      z-index: -1;
+      width: 100%;
+      height: 0.55em;
+      margin-top: -0.8em;
+      margin-left: 0.2em;
+      background: $underline-color;
+    }
+  }
+}
