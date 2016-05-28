@@ -2,7 +2,6 @@
 ---
 @charset "utf-8";
 
-// Our variables
 $base-font-family: "Consolas", Helvetica, Arial, sans-serif;
 $base-font-size:   12px;
 $medium-font-size: 13px;
@@ -15,12 +14,7 @@ $color-text:       #000;
 $color-text-light: #606060;
 $color-background: #fff;
 
-
-// Width of the content area
 $content-width:    475px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
 
 $underline-colors: (
   green: #3CF600,
@@ -31,16 +25,6 @@ $underline-colors: (
 );
 
 
-
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
-}
-
-
-
-// Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
         "layout",
