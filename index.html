@@ -18,7 +18,11 @@ layout: default
   {% for post in site.posts %}
     <li>
       <span class="post-link">
+        {% if post.external_url %}
+        <a href="{{ post.external_url }}">{{ post.title }}</a>
+        {% else %}
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        {% endif %}
       </span>
       <span class="post-meta">
         <span class="text-muted underline-{{ post.color }}">{{ post.date | date: "%-d %b %Y" }}</span>
