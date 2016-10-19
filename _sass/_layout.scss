@@ -2,8 +2,25 @@
  * Site header
  */
  .site-title {
-   text-decoration: none;
-   color: inherit;
+   font-size: $font-size-base;
+
+   .underline:after {
+     display: none;
+   }
+
+   &:hover {
+     .underline:after {
+       display: block;
+     }
+   }
+ }
+
+ .site-title-home {
+   font-size: $font-size-large;
+ }
+
+ .hr {
+   margin-bottom: $spacing-unit / 2;
  }
 
 /**
@@ -11,10 +28,6 @@
  */
 .page-content {
   padding: $spacing-unit 0;
-}
-
-.page-heading {
-  font-size: $font-size-large;
 }
 
 .post-list {
@@ -31,14 +44,6 @@
 .post-link {
   font-weight: bold;
   flex: 1;
-
-  a {
-    color: inherit;
-    text-decoration: none;
-    &:hover {
-      text-decoration: underline;
-    }
-  }
 }
 
 /**
@@ -49,7 +54,7 @@
 }
 
 .post-title {
-  font-size: 16px;
+  font-size: $font-size-large;
 }
 
 .post-content {

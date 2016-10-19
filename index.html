@@ -2,8 +2,8 @@
 layout: default
 ---
 
-<h1 class="page-heading text-center">
-  <span class="underline-green">Peter Siemens</span>
+<h1 class="site-title-home text-center">
+  <span class="underline underline-green">Peter Siemens</span>
 </h1>
 
 <p class="text-center">Software engineer, computer science student, mediocre skier and dabbling data journalist.</p>
@@ -25,7 +25,7 @@ layout: default
         {% endif %}
       </div>
       <div class="post-meta">
-        <span class="text-muted underline-{{ post.color }}">{{ post.date | date: "%-d %b %Y" }}</span>
+        <span class="text-muted underline underline-{{ post.color }}">{{ post.date | date: "%-d %b %Y" }}</span>
       </div>
     </li>
   {% endfor %}
