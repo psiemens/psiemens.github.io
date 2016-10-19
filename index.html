@@ -12,21 +12,21 @@ layout: default
   <a href="mailto:{{ site.email }}" class="text-muted">{{ site.email }}</a>
   &nbsp;
   <a href="https://github.com/{{ site.github_username }}" class="text-muted">github.com/{{ site.github_username }}</a>
-<p>
+</p>
 
 <ul class="post-list">
   {% for post in site.posts %}
     <li>
-      <span class="post-link">
+      <div class="post-link">
         {% if post.external_url %}
         <a href="{{ post.external_url }}">{{ post.title }}</a>
         {% else %}
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         {% endif %}
-      </span>
-      <span class="post-meta">
+      </div>
+      <div class="post-meta">
         <span class="text-muted underline-{{ post.color }}">{{ post.date | date: "%-d %b %Y" }}</span>
-      </span>
+      </div>
     </li>
   {% endfor %}
 </ul>
