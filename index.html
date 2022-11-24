@@ -6,27 +6,10 @@ layout: default
   <span class="underline underline-green">Peter Siemens</span>
 </h1>
 
-<p class="text-center">Software engineer, computer science student, mediocre skier and dabbling data journalist.</p>
+<p class="text-center">Software developer based in Vancouver, BC.</p>
 
 <p class="text-center">
   <a href="mailto:{{ site.email }}" class="text-muted">{{ site.email }}</a>
   &nbsp;
   <a href="https://github.com/{{ site.github_username }}" class="text-muted">github.com/{{ site.github_username }}</a>
 </p>
-
-<ul class="post-list">
-  {% for post in site.posts %}
-    <li>
-      <div class="post-link">
-        {% if post.external_url %}
-        <a href="{{ post.external_url }}">{{ post.title }}</a>
-        {% else %}
-        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        {% endif %}
-      </div>
-      <div class="post-meta">
-        <span class="text-muted underline underline-{{ post.color }}">{{ post.date | date: "%-d %b %Y" }}</span>
-      </div>
-    </li>
-  {% endfor %}
-</ul>
